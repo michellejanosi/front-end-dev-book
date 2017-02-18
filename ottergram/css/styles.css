@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   font-size: 10px;
   background: rgb(149,194,215);
+  margin: 0;
 }
 
 a {
