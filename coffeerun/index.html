@@ -13,7 +13,7 @@
     <section>
       <div class="panel panel-default">
         <div class="panel-body">
-          <form data-coffee-order="form">
+          <form data-coffee-order="form" oninput="level.value = strength.valueAsNumber">
             <div class="form-group">
               <label for="coffeeOrder">Coffee Order</label>
               <input class="form-control" name="coffee" id="coffeeOrder" autofocus>
@@ -40,6 +40,12 @@
                 Grande
               </label>
             </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="coffee-zilla">
+                Coffee-zilla
+              </label>
+            </div>
             <div class="form-group">
               <label for="flavorShot">Flavor Shot</label>
               <select id="flavorShot" class="form-control" name="flavor">
@@ -52,7 +58,8 @@
             </div>
             <div class="form-group">
               <label for="strengthLevel">Caffeine Rating</label>
-              <input type="range" id="strengthLevel" name="strength" value="30">
+              <input type="range" id="strengthLevel" name="strength" min="0" max="100" value="30">
+              <output for="strengthLevel" name="level">30</output>/100
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
             <button type="reset" class="btn btn-default">Reset</button>
@@ -61,6 +68,8 @@
       </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/formhandler.js"></script>
     <script src="scripts/datastore.js"></script>
     <script src="scripts/truck.js"></script>
     <script src="scripts/main.js"></script>
