@@ -18,11 +18,11 @@
           <form data-coffee-order="form" oninput="level.value = strength.valueAsNumber">
             <div class="form-group">
               <label for="coffeeOrder">Coffee Order</label>
-              <input class="form-control" name="coffee" id="coffeeOrder" autofocus>
+              <input class="form-control" name="coffee" id="coffeeOrder" autofocus required>
             </div>
             <div class="form-group">
               <label for="emailInput">Email</label>
-              <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="dr@who.com">
+              <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="name@akronwit.org" required pattern="[a-zA-Z\s]+">
             </div>
             <div class="radio">
               <label>
@@ -72,12 +72,15 @@
       <div class="panel panel-default">
         <div class="panel-body">
           <h5>Pending Orders:</h5>
-          <div data-coffee orders="checklist"></div>
+          <div data-coffee-order="checklist">
+          </div>
         </div>
       </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/checklist.js"></script>
     <script src="scripts/formhandler.js"></script>
     <script src="scripts/datastore.js"></script>
     <script src="scripts/truck.js"></script>
