@@ -5,13 +5,13 @@ Working through [Big Nerd Ranch's Front-End Web Development](https://www.bignerd
 
 ### The Applications:
 
-* Ottergram - A web-based photo gallery using HTML, CSS, and JavaScript
+* *Ottergram* - A web-based photo gallery using HTML, CSS, and JavaScript
 
-* CoffeeRun - Part coffee order, part checklist. Uses a number of JavaScript techniques: writing modular code, closures, and communicating with a remote server using Ajax.
+* *CoffeeRun* - Part coffee order, part checklist. Uses a number of JavaScript techniques: writing modular code, closures, and communicating with a remote server using Ajax.
 
-* Chattrbox - A web-based chat system. Writing a chat server with Node.js as well as a browser based chat client.
+* *Chattrbox* - A web-based chat system. Writing a chat server with Node.js as well as a browser based chat client.
 
-* Tracker - An application that catalogs sightings of rare, exotic and mythical creatures. Created using the Ember.js framework.
+* *Tracker* - An application that catalogs sightings of rare, exotic and mythical creatures. Created using the Ember.js framework.
 
 ### Tools used:
 
